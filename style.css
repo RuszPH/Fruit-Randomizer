@@ -1,0 +1,404 @@
+:root {
+	--ink: #1d2922;
+	--muted: #68746b;
+	--paper: #f7f4ec;
+	--leaf: #315c46;
+	--line: rgba(29, 41, 34, 0.14);
+	--display-font: Georgia, "Times New Roman", serif;
+	--body-font: "Trebuchet MS", Arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--paper);
+	color: var(--ink);
+	font-family: var(--body-font);
+	margin: 0;
+}
+
+header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	left: 0;
+	padding: 22px 6vw;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.title h1 {
+	font-size: 1rem;
+	letter-spacing: 0.08em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+nav ul {
+	display: flex;
+	gap: 28px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	color: var(--ink);
+	font-size: 0.88rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--leaf);
+}
+
+.fruit-draw-section {
+	align-items: center;
+	background: radial-gradient(circle at 70% 32%, #f4cf83 0, #f4cf83 14%, transparent 14.2%), linear-gradient(115deg, #dce9d9, #f7f4ec 58%);
+	display: grid;
+	gap: 5vw;
+	grid-template-columns: minmax(240px, 0.8fr) minmax(300px, 1fr);
+	min-height: 100vh;
+	padding: 130px 10vw 90px;
+	position: relative;
+}
+
+.draw-copy {
+	max-width: 440px;
+}
+
+.eyebrow {
+	color: var(--leaf);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: var(--display-font);
+	font-size: clamp(2.5rem, 5vw, 5rem);
+	line-height: 0.98;
+	margin: 14px 0 22px;
+}
+
+.draw-copy > p:last-child,
+.section-intro {
+	color: var(--muted);
+	font-size: 1.05rem;
+	line-height: 1.6;
+}
+
+.image {
+	align-items: center;
+	background: #e6eadb;
+	border-radius: 50%;
+	box-shadow: 18px 25px 0 rgba(49, 92, 70, 0.12);
+	display: flex;
+	flex-direction: column;
+	height: min(34vw, 430px);
+	justify-content: center;
+	justify-self: center;
+	min-height: 280px;
+	min-width: 280px;
+	transition: background 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+	width: min(34vw, 430px);
+}
+
+.image:hover {
+	box-shadow: 24px 32px 0 rgba(49, 92, 70, 0.18);
+	transform: rotate(-3deg) scale(1.03);
+}
+
+.fruit-placeholder {
+	color: var(--muted);
+	font-family: var(--display-font);
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+button {
+	background: var(--ink);
+	border: 0;
+	border-radius: 99px;
+	bottom: 11vh;
+	color: white;
+	cursor: pointer;
+	font: 700 0.95rem var(--body-font);
+	left: 10vw;
+	padding: 15px 22px;
+	position: absolute;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background: var(--leaf);
+	transform: translateY(-3px);
+}
+
+button span {
+	font-size: 1.2rem;
+	margin-left: 10px;
+}
+
+.fruit-inventory-section {
+	padding: 100px 10vw;
+}
+
+.fruit-inventory-section h2 {
+	font-size: clamp(2.4rem, 4vw, 4rem);
+	margin-bottom: 8px;
+}
+
+.section-intro {
+	margin-top: 0;
+}
+
+#fruit-list {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	margin: 0;
+	padding: 140px 10vw 80px;
+}
+
+.Fruits {
+	display: block;
+	margin-top: 48px;
+	min-width: 0;
+	width: 100%;
+}
+
+.fruit-container {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	min-width: 0;
+	width: 100%;
+}
+
+.fruit-card {
+	background: #fffdf7;
+	border: none;
+	border-radius: 18px;
+	box-shadow: 0 12px 28px rgba(29, 41, 34, 0.14);
+	display: grid;
+	gap: 6px;
+	grid-template-columns: 1fr;
+	min-width: 0;
+	padding: 18px 16px;
+	transition: transform 0.2s ease;
+	width: 100%;
+}
+
+.fruit-card:hover {
+	transform: translateY(-5px);
+}
+
+.fruit-card img {
+	background: #f5e4d4;
+	border-radius: 12px;
+	display: block;
+	aspect-ratio: 1;
+	height: auto;
+	margin-bottom: 8px;
+	max-height: 150px;
+	max-width: 100%;
+	object-fit: contain;
+	padding: 10px;
+	position: static;
+	width: 100%;
+}
+
+.fruit-card h3,
+.fruit-card h4 {
+	overflow-wrap: anywhere;
+	margin: 0;
+}
+
+.fruitname {
+	font-family: var(--display-font);
+	font-size: 1.35rem;
+	line-height: 1.1;
+}
+
+.fruitrarity,
+.fruitchance,
+.qty {
+	color: var(--muted);
+	font-size: 0.78rem;
+	font-weight: 400;
+}
+
+.fruitrarity {
+	color: var(--leaf);
+	font-weight: 700;
+}
+
+footer {
+	border-top: 1px solid var(--line);
+	color: var(--muted);
+	display: flex;
+	font-size: 0.8rem;
+	justify-content: space-between;
+	padding: 30px 10vw;
+}
+
+@media (max-width: 700px) {
+	header {
+		padding: 18px 6vw;
+	}
+
+	nav ul {
+		gap: 13px;
+	}
+
+	.fruit-draw-section {
+		gap: 40px;
+		grid-template-columns: 1fr;
+		padding: 120px 8vw 140px;
+		text-align: center;
+	}
+
+	.draw-copy {
+		margin: auto;
+	}
+
+	.image {
+		height: 280px;
+		width: 280px;
+	}
+
+	button {
+		bottom: 55px;
+		left: 50%;
+		transform: translateX(-50%);
+		white-space: nowrap;
+	}
+
+	button:hover {
+		transform: translateX(-50%) translateY(-3px);
+	}
+
+	.fruit-inventory-section {
+		padding: 75px 8vw;
+	}
+
+	.Fruits {
+		margin-top: 30px;
+	}
+
+	.fruit-container {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	#fruit-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		padding: 120px 8vw 60px;
+	}
+
+	footer {
+		gap: 10px;
+		padding: 25px 8vw;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+	.fruit-container {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 480px) {
+	.fruit-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.Common {
+    color:gray;
+}
+
+.Uncommon {
+    color:green;
+}
+
+.Rare {
+    color:lightskyblue;
+}
+
+.Epic {
+    color: purple;
+}
+
+.Legendary {
+    color: gold;
+}
+.Mythical {
+    color:red;
+}
+
+.about-page {
+	min-height: 100vh;
+}
+
+.about-main {
+	padding: 150px 10vw 80px;
+}
+
+.about-hero {
+	background: linear-gradient(135deg, #dce9d9, #f4cf83);
+	border-radius: 28px;
+	box-shadow: 0 16px 32px rgba(29, 41, 34, 0.1);
+	padding: clamp(32px, 7vw, 90px);
+}
+
+.about-hero h2 {
+	max-width: 700px;
+}
+
+.about-hero p {
+	color: var(--muted);
+	font-size: 1.1rem;
+	line-height: 1.7;
+	max-width: 650px;
+}
+
+.about-grid {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin-top: 32px;
+}
+
+.about-card {
+	background: #fffdf7;
+	border-radius: 18px;
+	box-shadow: 0 10px 24px rgba(29, 41, 34, 0.08);
+	padding: 28px;
+}
+
+.about-card h3 {
+	font-family: var(--display-font);
+	font-size: 1.4rem;
+	margin: 0 0 12px;
+}
+
+.about-card p {
+	color: var(--muted);
+	line-height: 1.6;
+	margin: 0;
+}
+
+@media (max-width: 700px) {
+	.about-main {
+		padding: 120px 8vw 60px;
+	}
+
+	.about-grid {
+		grid-template-columns: 1fr;
+	}
+}

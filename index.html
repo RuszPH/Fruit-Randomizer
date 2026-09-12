@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Fruit Randomizer</h1>
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list.html">Fruits</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <section class="fruit-draw-section">
+            
+            <div class="draw-copy">
+                <h3 class="draws-let" id="draws-left"><!--this header indicates hot much draws he still got--></h3>
+                <p class="eyebrow">Today's pick</p>
+                <h2>Find a fruit worth craving.</h2>
+                <p>Let a little randomness decide what lands on your plate next By Ruzzel.</p>
+            </div>
+            <div class="image" >
+                <span class="fruit-placeholder" id="fruitimage">Ready when you are</span>
+            </div>
+            <button  id="drawbtn" type="button">Draw a fruit <span aria-hidden="true">&#8594;</span></button>
+        </section>
+        <section class="fruit-inventory-section" id="inventory">
+            <h2>Fruit Inventory</h2>
+            <p class="section-intro">A colorful collection of possibilities.</p>
+            <div class="Fruits">
+                <div class="fruit-container" id="fruit-container">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Fruit Randomizer</span>
+        <span>Good choices can be accidental.</span>
+    </footer>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
