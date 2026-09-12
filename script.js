@@ -1,32 +1,32 @@
 export const fruits = [
   // COMMON
-  { name: "Banana", probability: 20, rarity: "Common", image: "https://cdn-icons-png.flaticon.com/512/3137/3137044.png" },
-  { name: "Apple", probability: 20, rarity: "Common", image: "https://cdn-icons-png.flaticon.com/512/415/415733.png" },
-  { name: "Orange", probability: 10, rarity: "Common", image: "https://cdn-icons-png.flaticon.com/512/1728/1728729.png" },
-  { name: "Watermelon", probability: 10, rarity: "Common", image: "https://cdn-icons-png.flaticon.com/512/3137/3137075.png" },
+  { name: "Banana", probability: 20, rarity: "Common", image: "https://up.yimg.com/ib/th/id/OIP.m8bFHuUT_8WenD8Xv9fHiQHaFv?pid=Api&rs=1&c=1&qlt=95&w=141&h=109" },
+  { name: "Apple", probability: 20, rarity: "Common", image: "https://up.yimg.com/ib/th/id/OIP.XaHLJVKT9vVfjBZeGAIiYwHaHa?pid=Api&rs=1&c=1&qlt=95&w=118&h=118" },
+  { name: "Orange", probability: 10, rarity: "Common", image: "https://tse2.mm.bing.net/th/id/OIP.RrhvHap-IUNObc5Njm1nAQHaE8?r=0&pid=Api&h=220&P=0" },
+  { name: "Watermelon", probability: 10, rarity: "Common", image: "https://tse1.mm.bing.net/th/id/OIP.0KP20B5MiIg-Tv5GuweSVgHaHa?r=0&pid=Api&h=220&P=0" },
 
   // UNCOMMON
-  { name: "Guava", probability: 8, rarity: "Uncommon", image: "https://cdn-icons-png.flaticon.com/512/3137/3137050.png" },
-  { name: "Papaya", probability: 8, rarity: "Uncommon", image: "https://cdn-icons-png.flaticon.com/512/3137/3137059.png" },
-  { name: "Pineapple", probability: 8, rarity: "Uncommon", image: "https://cdn-icons-png.flaticon.com/512/3137/3137062.png" },
+  { name: "Guava", probability: 8, rarity: "Uncommon", image: "https://tse3.mm.bing.net/th/id/OIP.eVLwIUWXnikjDqjJfocODQHaHa?r=0&pid=Api&h=220&P=0" },
+  { name: "Papaya", probability: 8, rarity: "Uncommon", image: "https://tse1.mm.bing.net/th/id/OIP.VtGUhxM3NQ_pMJvAVy9GNgHaGD?r=0&pid=Api&h=220&P=0" },
+  { name: "Pineapple", probability: 8, rarity: "Uncommon", image: "https://tse1.mm.bing.net/th/id/OIP.14Pqr_MmalFeuvussOfudQHaHa?r=0&pid=Api&h=220&P=0" },
 
   // RARE
-  { name: "Mango", probability: 5, rarity: "Rare", image: "https://cdn-icons-png.flaticon.com/512/3137/3137054.png" },
-  { name: "Grapes", probability: 5, rarity: "Rare", image: "https://cdn-icons-png.flaticon.com/512/3137/3137049.png" },
-  { name: "Strawberry", probability: 5, rarity: "Rare", image: "https://cdn-icons-png.flaticon.com/512/590/590685.png" },
+  { name: "Mango", probability: 5, rarity: "Rare", image: "https://tse3.mm.bing.net/th/id/OIP.gtofHqz5AdnkQGQmZTP07QHaHa?r=0&pid=Api&h=220&P=0" },
+  { name: "Grapes", probability: 5, rarity: "Rare", image: "https://tse2.mm.bing.net/th/id/OIP.5TCZVd6NM7i782RvFtkfhwHaE7?r=0&pid=Api&h=220&P=0" },
+  { name: "Strawberry", probability: 5, rarity: "Rare", image: "https://tse2.mm.bing.net/th/id/OIP.TDnjugw2jWw68tyT9B6l9AHaHa?r=0&pid=Api&h=220&P=0" },
 
   // EPIC
-  { name: "Dragon Fruit", probability: 4, rarity: "Epic", image: "https://cdn-icons-png.flaticon.com/512/3137/3137047.png" },
-  { name: "Avocado", probability: 3, rarity: "Epic", image: "https://cdn-icons-png.flaticon.com/512/1541/1541402.png" },
-  { name: "Lychee", probability: 2, rarity: "Epic", image: "https://cdn-icons-png.flaticon.com/512/3137/3137053.png" },
+  { name: "Dragon Fruit", probability: 4, rarity: "Epic", image: "https://tse1.mm.bing.net/th/id/OIP.CZkJ8eW2hH7bUadl2JYSUAHaEK?r=0&pid=Api&h=220&P=0" },
+  { name: "Avocado", probability: 3, rarity: "Epic", image: "https://tse1.mm.bing.net/th/id/OIP.MROilhiCNqYvKmGiVCAY_AHaHa?r=0&pid=Api&h=220&P=0" },
+  { name: "Lychee", probability: 2, rarity: "Epic", image: "https://tse4.mm.bing.net/th/id/OIP.XbnB7w1M7a0Fjq3xlOnFDgHaHb?r=0&pid=Api&h=220&P=0" },
 
   // LEGENDARY
-  { name: "Durian", probability: 2, rarity: "Legendary", image: "https://cdn-icons-png.flaticon.com/512/3137/3137048.png" },
-  { name: "Mangosteen", probability: 1, rarity: "Legendary", image: "https://cdn-icons-png.flaticon.com/512/3137/3137055.png" },
+  { name: "Durian", probability: 2, rarity: "Legendary", image: "https://tse3.mm.bing.net/th/id/OIP.FL0s1PYTKebYunHT6zqJzQHaE5?r=0&pid=Api&h=220&P=0" },
+  { name: "Mangosteen", probability: 1, rarity: "Legendary", image: "https://tse2.mm.bing.net/th/id/OIP.a1-G1xgwnQT2hfWjPXcUWwHaE8?r=0&pid=Api&h=220&P=0" },
 
   // MYTHICAL
-  { name: "Golden Apple", probability: 1, rarity: "Mythical", image: "https://cdn-icons-png.flaticon.com/512/11550/11550130.png" },
-  { name: "Rainbow Fruit", probability: 1, rarity: "Mythical", image: "https://cdn-icons-png.flaticon.com/512/11550/11550155.png" }
+  { name: "Golden Apple", probability: 1, rarity: "Mythical", image: "https://tse4.mm.bing.net/th/id/OIP.f2V2SN8-tawpTwHtvAqmJwHaHa?r=0&pid=Api&h=220&P=0" },
+  { name: "Rainbow Fruit", probability: 1, rarity: "Mythical", image: "Gemini_Generated_Image_fcfl5dfcfl5dfcfl.jpg" }
 ];
 
 let inventory = []
