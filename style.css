@@ -165,6 +165,48 @@ button span {
 	padding: 140px 10vw 80px;
 }
 
+.filter {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.filter-label {
+	font-weight: 600;
+	color: var(--ink);
+	font-size: 0.95rem;
+}
+
+#dp-filter {
+	padding: 0.75rem 1rem;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-family: inherit;
+	background-color: #ffffff;
+	color: var(--ink);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	appearance: none;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/csvg%3e");
+	background-repeat: no-repeat;
+	background-position: right 0.75rem center;
+	background-size: 1.2rem;
+	padding-right: 2.5rem;
+}
+
+#dp-filter:hover {
+	border-color: var(--leaf);
+	box-shadow: 0 2px 8px rgba(49, 92, 70, 0.15);
+}
+
+#dp-filter:focus {
+	outline: none;
+	border-color: var(--leaf);
+	box-shadow: 0 0 0 3px rgba(49, 92, 70, 0.2);
+}
+
 .Fruits {
 	display: block;
 	margin-top: 48px;
@@ -236,6 +278,136 @@ button span {
 .fruitrarity {
 	color: var(--leaf);
 	font-weight: 700;
+}
+
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(29, 41, 34, 0.6);
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+	animation: fadeIn 0.3s ease;
+}
+
+.modal-overlay.active {
+	display: flex;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.modal-content {
+	background: var(--paper);
+	border-radius: 16px;
+	box-shadow: 0 20px 60px rgba(29, 41, 34, 0.25);
+	position: relative;
+	max-width: 500px;
+	width: 90%;
+	padding: 40px 30px;
+	text-align: center;
+	animation: slideUp 0.3s ease;
+	margin: auto;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.modal-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	background: transparent;
+	border: none;
+	font-size: 28px;
+	cursor: pointer;
+	color: var(--ink);
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+	background: rgba(49, 92, 70, 0.1);
+}
+
+.modal-body h1 {
+	font-family: var(--display-font);
+	font-size: 2.5rem;
+	margin: 0 0 16px;
+	color: var(--ink);
+}
+
+.modal-message {
+	font-size: 1.2rem;
+	color: var(--muted);
+	margin: 0 0 24px;
+}
+
+.modal-rarity {
+	color: var(--leaf);
+	font-weight: 700;
+}
+
+.modal-image {
+	height: 200px;
+	margin: 24px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e6eadb;
+	border-radius: 12px;
+}
+
+.modal-image img {
+	max-width: 90%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.modal-description {
+	font-size: 0.95rem;
+	color: var(--muted);
+	line-height: 1.6;
+	margin: 0 0 28px;
+}
+
+.modal-action {
+	background: var(--leaf);
+	border: none;
+	border-radius: 99px;
+	color: white;
+	cursor: pointer;
+	font: 700 1rem var(--body-font);
+	padding: 12px 32px;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.modal-action:hover {
+	background: #2a4d3a;
+	transform: translateY(-2px);
 }
 
 footer {
